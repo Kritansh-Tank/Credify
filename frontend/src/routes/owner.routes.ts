@@ -1,7 +1,7 @@
 import { Router } from 'express';
-import { authenticateToken } from '../middleware/auth.middleware';
-import { requireRole } from '../middleware/role.middleware';
-import { getOwnerDashboard } from '../controllers/owner.controller';
+import { authenticateToken } from '../middleware/auth.middleware.js';
+import { requireRole } from '../middleware/role.middleware.js';
+import { getOwnerDashboard } from '../controllers/owner.controller.js';
 
 const router = Router();
 

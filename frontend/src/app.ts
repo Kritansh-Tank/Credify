@@ -1,10 +1,10 @@
 import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
-import authRoutes from './routes/auth.routes';
-import adminRoutes from './routes/admin.routes';
-import userRoutes from './routes/user.routes';
-import ownerRoutes from './routes/owner.routes';
+import authRoutes from './routes/auth.routes.js';
+import adminRoutes from './routes/admin.routes.js';
+import userRoutes from './routes/user.routes.js';
+import ownerRoutes from './routes/owner.routes.js';
 
 const app = express();
 

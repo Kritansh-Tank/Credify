@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import bcrypt from 'bcryptjs';
 import { validationResult } from 'express-validator';
-import db from '../lib/db';
+import db from '../lib/db.js';
 
 // ---------- DASHBOARD ----------
 export async function getDashboard(_req: Request, res: Response): Promise<void> {

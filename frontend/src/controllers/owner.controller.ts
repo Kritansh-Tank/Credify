@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import db from '../lib/db';
+import db from '../lib/db.js';
 
 export async function getOwnerDashboard(req: Request, res: Response): Promise<void> {
   const storeId = req.user!.store_id;

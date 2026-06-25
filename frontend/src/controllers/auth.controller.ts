@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import { validationResult } from 'express-validator';
-import db from '../lib/db';
+import db from '../lib/db.js';
 
 export async function login(req: Request, res: Response): Promise<void> {
   const errors = validationResult(req);

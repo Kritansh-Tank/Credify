@@ -1,8 +1,8 @@
 import { Router } from 'express';
 import { body } from 'express-validator';
-import { authenticateToken } from '../middleware/auth.middleware';
-import { requireRole } from '../middleware/role.middleware';
-import { getStores, submitRating, modifyRating } from '../controllers/user.controller';
+import { authenticateToken } from '../middleware/auth.middleware.js';
+import { requireRole } from '../middleware/role.middleware.js';
+import { getStores, submitRating, modifyRating } from '../controllers/user.controller.js';
 
 const router = Router();
 

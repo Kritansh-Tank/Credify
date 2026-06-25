@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { body } from 'express-validator';
-import { authenticateToken } from '../middleware/auth.middleware';
-import { requireRole } from '../middleware/role.middleware';
+import { authenticateToken } from '../middleware/auth.middleware.js';
+import { requireRole } from '../middleware/role.middleware.js';
 import {
   getDashboard,
   getUsers,
@@ -9,7 +9,7 @@ import {
   createUser,
   getStores,
   createStore,
-} from '../controllers/admin.controller';
+} from '../controllers/admin.controller.js';
 
 const router = Router();
 

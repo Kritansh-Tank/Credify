@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import { validationResult } from 'express-validator';
-import db from '../lib/db';
+import db from '../lib/db.js';
 
 export async function getStores(req: Request, res: Response): Promise<void> {
   const { search, sortBy = 'name', sortOrder = 'asc' } = req.query as Record<string, string>;
