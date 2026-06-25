@@ -1,7 +1,18 @@
 {
-  "buildCommand": "npm run build --prefix frontend",
-  "outputDirectory": "frontend/.next",
   "installCommand": "npm install && npm install --prefix frontend",
+  "builds": [
+    {
+      "src": "frontend/package.json",
+      "use": "@vercel/next"
+    },
+    {
+      "src": "api/index.ts",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": ["src/**"]
+      }
+    }
+  ],
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/index" }
   ]
